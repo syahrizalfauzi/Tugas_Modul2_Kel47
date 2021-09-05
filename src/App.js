@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Checklist from "./Checklist";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-900 text-white h-screen p-4">
+      <h1 className="font-extrabold text-3xl mb-4">
+        Tugas Praktikum RPLBK Modul 2 Kelompok 47
+      </h1>
+      <p className="font-thin text-base">Anggota :</p>
+      <ul>
+        <li className="font-bold">Muhammad Syahrizal Fauzi (21120118130066)</li>
+        <li className="font-bold">Muhammad Dzaky Naufal (21120118140071)</li>
+      </ul>
+
+      <div className="mt-4">
+        <h1 className="text-lg font-bold mb-2">Komponen 1 : Checklist</h1>
+        <Checklist
+          items={[
+            { title: "Belajar react", isChecked: false },
+            { title: "Kerjain lembar analisis", isChecked: true },
+            { title: "Makan", isChecked: false },
+          ]}
+          isBordered
+          strikethrough
+        />
+      </div>
     </div>
   );
 }
