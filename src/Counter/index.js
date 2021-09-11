@@ -9,11 +9,10 @@ function Button(props) {
       <button onClick={() => setCount(count + 1)}>
         <b
           className={`${blue ? "blue" : ""} ${italic ? "italic" : ""} ${
-            isClicked ? "red" : ""
-          }`}
+            isClicked ? "underline" : ""}`} 
         >
           Tambahkan
-          <input type="submit" clicked={isClicked}></input>
+          <input type="button" clicked={isClicked}></input>
         </b>
       </button>
     </div>
