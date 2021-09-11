@@ -1,5 +1,6 @@
 import React from "react";
 import Checklist from "./Checklist";
+import Button from "./Counter";
 
 function App() {
   return (
@@ -23,6 +24,14 @@ function App() {
           ]}
           isBordered
           strikethrough
+        />
+      </div>
+      <div className="mt-4">
+        <h1 className="text-lg font-bold mb-2">Komponen 2 : Buttontoggle</h1>
+        <Button
+        blue
+        italic
+        isClicked
         />
       </div>
     </div>
