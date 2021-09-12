@@ -29,7 +29,7 @@ function App() {
       <div className="mt-4">
         <h1 className="text-lg font-bold mb-2">Komponen 2 : Counter</h1>
         <Button
-          bold={[{
+          benda={[{
             "name": "kursi",
             "ukuran": "besar"
           },
@@ -38,7 +38,7 @@ function App() {
             "ukuran": "besar"
           }
         ]}
-          italic underline />
+          italic={false} underline />
       </div>
     </div>
   );
