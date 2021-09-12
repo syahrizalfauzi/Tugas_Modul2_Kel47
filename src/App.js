@@ -38,7 +38,7 @@ function App() {
             "ukuran": "besar"
           }
         ]}
-          italic={false} underline />
+          italic underline />
       </div>
     </div>
   );
