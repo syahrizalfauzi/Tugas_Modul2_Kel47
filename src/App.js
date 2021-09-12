@@ -28,7 +28,18 @@ function App() {
       </div>
       <div className="mt-4">
         <h1 className="text-lg font-bold mb-2">Komponen 2 : Counter</h1>
-        <Button bold italic underline />
+        <Button
+        items= {[{
+          "name": "kursi",
+          "id": 3
+        },
+        {
+          "name": "meja",
+          "id": 4
+        }
+      ]}
+          bold
+          italic underline />
       </div>
     </div>
   );
